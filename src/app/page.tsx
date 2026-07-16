@@ -13,7 +13,6 @@ import { SkillCard } from "@/components/SkillCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { AnimatedTyping } from "@/components/AnimatedTyping";
 import { Navbar } from "@/components/Navbar";
-import { SmoothScroll } from "@/components/SmoothScroll";
 import { HeroPulse } from "@/components/HeroPulse";
 import { projects, skills, stats } from "@/data/sections";
 import {
@@ -85,7 +84,6 @@ const iconMap = {
 export default function Home() {
   return (
     <>
-      <SmoothScroll />
       <main className="relative overflow-hidden px-6 pb-28 pt-8 sm:px-10 lg:px-16">
         <Navbar />
 
@@ -203,16 +201,9 @@ export default function Home() {
           </div>
         </motion.section>
 
-        <motion.section
+        <section
           id="skills"
-          className="mt-20 max-w-7xl"
-          initial={{ opacity: 0, y: 32 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: "easeOut" },
-          }}
-          viewport={{ once: true, amount: 0.2 }}
+          className="mt-20 max-w-7xl scroll-mt-28 sm:scroll-mt-32"
         >
           <SectionHeading
             align="center"
@@ -247,7 +238,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </motion.section>
+        </section>
 
         <motion.section
           id="projects"
