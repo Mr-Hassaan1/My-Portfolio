@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import type { ReactNode } from 'react';
 
@@ -20,8 +21,14 @@ export function ProjectCard({ title, description, tech, demoUrl, repoUrl, image 
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="relative overflow-hidden">
-        <img src={image} alt={title} className="h-52 w-full object-cover transition duration-500 group-hover:scale-105" />
+      <div className="relative h-52 w-full overflow-hidden">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          sizes="100vw"
+          className="object-cover transition duration-500 group-hover:scale-105"
+        />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
       </div>
       <div className="space-y-5 p-6">

@@ -114,7 +114,7 @@ export default function Home() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
               >
                 <p className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                  I'm{" "}
+                  I&apos;m{" "}
                   <span className="text-sky-300">Muhammad Hassaan Tahir</span>,
                   a Full-Stack Web Developer passionate about building fast,
                   scalable, and visually engaging digital experiences.
@@ -156,7 +156,7 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_0.55fr]">
             <div className="space-y-6 rounded-[2rem] border border-white/10 bg-slate-950/70 p-8 shadow-2xl shadow-slate-950/20 backdrop-blur-xl">
               <p className="text-base leading-8 text-slate-300">
-                I am a senior software engineer who loves transforming ambitious
+                I am a full-stack web developer who loves transforming ambitious
                 ideas into elegant web experiences. My work spans product design
                 systems, developer tools, and polished interfaces with
                 animation, accessibility, and performance at the core.
